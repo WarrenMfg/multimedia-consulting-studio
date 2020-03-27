@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index">
+	<meta name="author" content="Kenneth Warren">
+	<meta name="copyright" content="&copy; 2019 Kenneth Warren">
+	<meta name="description" content="Multimedia Consulting Studio traditional portfolio consisting of acrylic, gouache, ink, graphite, colored pencils, charcoal, and pigment markers.">
+	<meta name="keywords" content="art, artist, hand, handmade, canvas, paper, digital, media, graphic, design, consulting, web, development, business">
+	<title>MCS&mdash;Traditional</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/mark.es6.min.js"></script>
+	<script src="js/traditional.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" onclick="menu()">&#9776;</div>
+
+		<nav>
+			<ul id="main-nav">
+				<li><a href="index.html" class="vw-anchor">HOME</a></li>
+				<li id="nav-portfolio" class="vw-anchor" onmouseover="showSubNav()" onmouseout="hideSubNav()">PORTFOLIO
+					<ul id="sub-nav">
+						<li><a href="digital.html">DIGITAL</a></li>
+						<li><a href="traditional.html">TRADITIONAL</a></li>
+						<li><a href="technical.html">TECHNICAL</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="video.html">VIDEO</a></li>
+						<li><a href="web.html">WEB</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="vw-anchor">SERVICES</a></li>
+				<li><a href="about.html" class="vw-anchor">ABOUT</a></li>
+				<li><a href="contact.html" class="vw-anchor">CONTACT</a></li>
+				<li><a href="blog.html" class="vw-anchor">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<div class="fas fa-search" onclick="showSearchBar()"></div>
+		<div id="search-section">
+			<form>
+				<input type="text" name="keyword" id="page-search" placeholder="Search this page..." title="Search this page..." autocomplete="off">
+				<input type="button" value="CLEAR" id="clear" onClick="this.form.reset()" />
+			</form>
+		</div>
+
+	</header>
+
+	<main>
+
+		<h2 id="tagline">Portfolio</h2>
+		<h3 id="tagline-h3">Traditional</h3>
+		<p id="skills">Traditional art media include acrylic, gouache, ink, graphite pencils, colored pencils, charcoal, and pigment markers on canvas, paper, and polypropylene synthetic paper. Subjects include portraits, animals, food, drapery, and manufactured goods.</p>
+
+		<div id="traditional-div">
+			<span title="My Wife" onclick="slideshow(0)"></span>
+			<span title="Scream" onclick="slideshow(1)"></span>
+			<span title="Psycho" onclick="slideshow(2)"></span>
+			<span title="Bacon" onclick="slideshow(3)"></span>
+			<span title="Till Death Do Us Party" onclick="slideshow(4)"></span>
+			<span title="Cherries" onclick="slideshow(5)"></span>
+			<span title="Eye" onclick="slideshow(6)"></span>
+			<span title="Amber" onclick="slideshow(7)"></span>
+			<span title="Headphones" onclick="slideshow(8)"></span>
+			<span title="Dachshund" onclick="slideshow(9)"></span>
+			<span title="Pomogranate" onclick="slideshow(10)"></span>
+			<span title="Self Portrait" onclick="slideshow(11)"></span>
+		</div>
+
+		<div id="digital-slides">
+			<div id="close-slides" onclick="closeSlides()">&times;</div>
+
+			<div>
+				<img src="images/traditional/my-wife.jpg" alt="My Wife" title="My Wife" width="1050" height="1365">
+			</div>
+			<div>
+				<img src="images/traditional/scream.jpg" alt="Scream" title="Scream" width="1050" height="817">
+			</div>
+			<div>
+				<img src="images/traditional/psycho.jpg" alt="Psycho" title="Psycho" width="1050" height="1400">
+			</div>
+			<div>
+				<img src="images/traditional/bacon.jpg" alt="Bacon" title="Bacon" width="1050" height="788">
+			</div>
+			<div>
+				<img src="images/traditional/till-death-do-us-party.jpg" alt="Till Death Do Us Party" title="Till Death Do Us Party" width="1050" height="825">
+			</div>
+			<div>
+				<img src="images/traditional/cherries.jpg" alt="Cherries" title="Cherries" width="1050" height="1336">
+			</div>
+			<div>
+				<img src="images/traditional/eye.jpg" alt="Eye" title="Eye" width="1050" height="750">
+			</div>
+			<div>
+				<img src="images/traditional/amber.jpg" alt="Amber" title="Amber" width="1050" height="741">
+			</div>
+			<div>
+				<img src="images/traditional/headphones.jpg" alt="Headphones" title="Headphones" width="1050" height="1060">
+			</div>
+			<div>
+				<img src="images/traditional/dachshund.jpg" alt="Dachshund" title="Dachshund" width="1050" height="788">
+			</div>
+			<div>
+				<img src="images/traditional/pomogranate.jpg" alt="Pomogranate" title="Pomogranate" width="1050" height="1400">
+			</div>
+			<div>
+				<img src="images/traditional/self-portrait.jpg" alt="Self Portrait" title="Self Portrait" width="1050" height="737">
+			</div>
+
+			<div id="next-slide" onclick="nextSlide()">&gt;</div>
+			<div id="previous-slide" onclick="previousSlide()">&lt;</div>
+		</div>
+
+
+
+
+	</main>
+
+	<footer>
+		<div id="footer-grid">
+			<ul id="footer-portfolio">
+				<li id="footer-portfolio-name">Portfolio</li>
+				<li><a href="digital.html">Digital</a></li>
+				<li><a href="traditional.html">Traditional</a></li>
+				<li><a href="technical.html">Technical</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="web.html">Web</a></li>
+			</ul>
+
+			<img src="images/logo.png" width="619" height="336" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo">
+
+			<ul id="footer-links">
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="creative-brief.html">Creative Brief</a></li>
+				<li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+				<!-- <li><a href="references.html">References</a></li> -->
+			</ul>
+		</div>
+
+		<div id="validation">
+			<!-- <p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386d02%2Fwarren-final-project%2Ftraditional.html&showsource=yes" target="_blank">HTML</a> |
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386d02%2Fwarren-final-project%2Ftraditional.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a> |
+				<a href="sitemap.xml" target="_blank">XML</a>
+			</p> -->
+			<p>&copy; Kenneth Warren 2020</p>
+		</div>
+	</footer>
+
+	<script>
+		// For page search using mark.js
+		var markInstance = new Mark(document.getElementsByTagName("main")[0]);
+		var keywordInput = document.getElementById("page-search");
+		var clearInput = document.getElementById("clear");
+		var options = {
+			"separateWordSearch": false,
+		}
+
+		function search() {
+			var keyword = keywordInput.value;
+
+			markInstance.unmark({
+				done: function () {
+					markInstance.mark(keyword, options);
+				}
+			});
+		}
+
+		keywordInput.addEventListener("input", search);
+		keywordInput.addEventListener("keypress", function(e) {
+			if (e.keyCode === 13) {
+				e.preventDefault();
+			}
+		})
+		clearInput.addEventListener("click", search);
+	</script>
+
+</body>
+</html>

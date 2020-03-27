@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index">
+	<meta name="author" content="Kenneth Warren">
+	<meta name="copyright" content="&copy; 2019 Kenneth Warren">
+	<meta name="description" content="Multimedia Consulting Studio contact form for estimates on digital media services.">
+	<meta name="keywords" content="digital, media, design, consulting, graphic, web, development, business, estimate, cost, fee, budget">
+	<title>MCS&mdash;Contact</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/mark.es6.min.js"></script>
+	<script src="js/contact.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" onclick="menu()">&#9776;</div>
+
+		<nav>
+			<ul id="main-nav">
+				<li><a href="index.html" class="vw-anchor">HOME</a></li>
+				<li id="nav-portfolio" class="vw-anchor" onmouseover="showSubNav()" onmouseout="hideSubNav()">PORTFOLIO
+					<ul id="sub-nav">
+						<li><a href="digital.html">DIGITAL</a></li>
+						<li><a href="traditional.html">TRADITIONAL</a></li>
+						<li><a href="technical.html">TECHNICAL</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="video.html">VIDEO</a></li>
+						<li><a href="web.html">WEB</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="vw-anchor">SERVICES</a></li>
+				<li><a href="about.html" class="vw-anchor">ABOUT</a></li>
+				<li><a href="contact.html" class="vw-anchor">CONTACT</a></li>
+				<li><a href="blog.html" class="vw-anchor">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<div class="fas fa-search" onclick="showSearchBar()"></div>
+		<div id="search-section">
+			<form>
+				<input type="text" name="keyword" id="page-search" placeholder="Search this page..." title="Search this page..." autocomplete="off">
+				<input type="button" value="CLEAR" id="clear" onClick="this.form.reset()" />
+			</form>
+		</div>
+
+	</header>
+
+	<main>
+
+		<h2 id="tagline">Contact</h2>
+
+		<form name="contact-form" action="mailto:warrenmfg@icloud.com" method="post" enctype="text/plain" novalidate onsubmit="return validateForm()">
+			<fieldset id="contact-fieldset">
+				<legend id="legend-contact">Contact information</legend>
+				<label for="form-name">Name*</label>
+				<input id="form-name" type="text" name="name" placeholder="Name (*required)" required onkeypress="removeNameError()">
+
+				<label for="form-email">Email address*</label>
+				<input id="form-email" type="text" name="email" placeholder="Email address (*required)" required onkeypress="removeEmailError()">
+
+				<label for="form-wphone">Work phone</label>
+				<input id="form-wphone" type="text" name="workphone" placeholder="Work phone">
+
+				<label for="form-cphone">Cell phone</label>
+				<input id="form-cphone" type="text" name="cellphone" placeholder="Cell phone"><br><br>
+
+			</fieldset>
+
+			<fieldset id="inquiry-fieldset">
+				<legend id="legend-inquiry">Inquiry information</legend>
+				<label for="form-comments">Questions/comments</label><br>
+				<textarea id="form-comments" name="comments" placeholder="Questions/comments"></textarea>
+				<div id="checkboxes">
+					<label id="form-checkbox">Type of work (check all that apply)</label><br>
+
+					<label for="form-government">Government sector</label>
+					<span id="span-gov" tabindex="0"><input id="form-government" type="checkbox" name="type-of-work" value="government" onchange="checkbox('span-gov')" tabindex="-1"></span>
+
+					<label for="form-private">Private sector</label>
+					<span id="span-private" tabindex="0"><input id="form-private" type="checkbox" name="type-of-work" value="private" onchange="checkbox('span-private')" tabindex="-1"></span>
+
+					<label for="form-personal">Personal</label>
+					<span id="span-personal" tabindex="0"><input id="form-personal" type="checkbox" name="type-of-work" value="personal" onchange="checkbox('span-personal')" tabindex="-1"></span>
+
+					<label for="form-other">Other</label>
+					<span id="span-other" tabindex="0"><input id="form-other" type="checkbox" name="type-of-work" value="other" onchange="checkbox('span-other')" tabindex="-1"></span>
+				</div>
+
+				<label for="form-budget">Budget</label>
+				<select name="budget" id="form-budget">
+					<option value="blank">Select a range</option>
+					<option value="tbd">To be determined</option>
+					<option value="500>">$500 or less</option>
+					<option value="501-1000">$501 to $1,000</option>
+					<option value="1001-2000">$1,001 to $2,000</option>
+					<option value="2001-3000">$2,001 to $3,000</option>
+					<option value="3001+">$3,001 or more</option>
+				</select>
+			</fieldset>
+
+			<button type="submit" value="Submit">Submit</button>
+
+		</form>
+
+
+	</main>
+
+	<footer>
+		<div id="footer-grid">
+			<ul id="footer-portfolio">
+				<li id="footer-portfolio-name">Portfolio</li>
+				<li><a href="digital.html">Digital</a></li>
+				<li><a href="traditional.html">Traditional</a></li>
+				<li><a href="technical.html">Technical</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="web.html">Web</a></li>
+			</ul>
+
+			<img src="images/logo.png" width="619" height="336" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo">
+
+			<ul id="footer-links">
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="creative-brief.html">Creative Brief</a></li>
+				<li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+				<!-- <li><a href="references.html">References</a></li> -->
+			</ul>
+		</div>
+
+		<div id="validation">
+			<!-- <p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386d02%2Fwarren-final-project%2Fcontact.html&showsource=yes" target="_blank">HTML</a> |
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386d02%2Fwarren-final-project%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a> |
+				<a href="sitemap.xml" target="_blank">XML</a>
+			</p> -->
+			<p>&copy; Kenneth Warren 2020</p>
+		</div>
+	</footer>
+
+	<script>
+		// For page search using mark.js
+		var markInstance = new Mark(document.getElementsByTagName("main")[0]);
+		var keywordInput = document.getElementById("page-search");
+		var clearInput = document.getElementById("clear");
+		var options = {
+			"separateWordSearch": false,
+		}
+
+		function search() {
+			var keyword = keywordInput.value;
+
+			markInstance.unmark({
+				done: function () {
+					markInstance.mark(keyword, options);
+				}
+			});
+		}
+
+		keywordInput.addEventListener("input", search);
+		keywordInput.addEventListener("keypress", function(e) {
+			if (e.keyCode === 13) {
+				e.preventDefault();
+			}
+		})
+		clearInput.addEventListener("click", search);
+	</script>
+
+</body>
+</html>

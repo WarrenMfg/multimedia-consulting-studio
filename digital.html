@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index">
+	<meta name="author" content="Kenneth Warren">
+	<meta name="copyright" content="&copy; 2019 Kenneth Warren">
+	<meta name="description" content="Multimedia Consulting Studio digital portfolio including logos, posters, t-shirts, wall art, and album covers.">
+	<meta name="keywords" content="digital, media, graphic, design, adobe, illustrator, art, business">
+	<title>MCS&mdash;Digital</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/mark.es6.min.js"></script>
+	<script src="js/digital.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" onclick="menu()">&#9776;</div>
+
+		<nav>
+			<ul id="main-nav">
+				<li><a href="index.html" class="vw-anchor">HOME</a></li>
+				<li id="nav-portfolio" class="vw-anchor" onmouseover="showSubNav()" onmouseout="hideSubNav()">PORTFOLIO
+					<ul id="sub-nav">
+						<li><a href="digital.html">DIGITAL</a></li>
+						<li><a href="traditional.html">TRADITIONAL</a></li>
+						<li><a href="technical.html">TECHNICAL</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="video.html">VIDEO</a></li>
+						<li><a href="web.html">WEB</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="vw-anchor">SERVICES</a></li>
+				<li><a href="about.html" class="vw-anchor">ABOUT</a></li>
+				<li><a href="contact.html" class="vw-anchor">CONTACT</a></li>
+				<li><a href="blog.html" class="vw-anchor">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<div class="fas fa-search" onclick="showSearchBar()"></div>
+		<div id="search-section">
+			<form>
+				<input type="text" name="keyword" id="page-search" placeholder="Search this page..." title="Search this page..." autocomplete="off">
+				<input type="button" value="CLEAR" id="clear" onClick="this.form.reset()" />
+			</form>
+		</div>
+
+	</header>
+
+	<main>
+
+		<h2 id="tagline">Portfolio</h2>
+		<h3 id="tagline-h3">Digital</h3>
+		<p id="skills">Digital art skills include Adobe Illustrator and Adobe Photoshop. For Adobe InDesign skills, visit the <a href="publication.html">Publication</a> page. Prior work includes designs for logos, posters, t-shirts, wall art, and album covers.</p>
+
+		<div id="digital-div">
+			<span title="Flow" onclick="slideshow(0)"></span>
+			<span title="Caffeine Crime Scene" onclick="slideshow(1)"></span>
+			<span title="Mother Nature" onclick="slideshow(2)"></span>
+			<span title="Chicken &amp; Pig" onclick="slideshow(3)"></span>
+			<span title="Camp and a Cuppa" onclick="slideshow(4)"></span>
+			<span title="Illusions" onclick="slideshow(5)"></span>
+			<span title="Eggplant" onclick="slideshow(6)"></span>
+			<span title="Baker Park" onclick="slideshow(7)"></span>
+			<span title="Doll" onclick="slideshow(8)"></span>
+			<span title="The Big &apos;Gin" onclick="slideshow(9)"></span>
+			<span title="Scotch" onclick="slideshow(10)"></span>
+			<span title="Natural Energy Law" onclick="slideshow(11)"></span>
+			<span title="Blond Sugar Skull" onclick="slideshow(12)"></span>
+			<span title="Orchid" onclick="slideshow(13)"></span>
+			<span title="Cloud Ship" onclick="slideshow(14)"></span>
+		</div>
+
+		<div id="digital-slides">
+			<div id="close-slides" onclick="closeSlides()">&times;</div>
+
+			<div>
+				<img src="images/digital/flow.jpg" alt="Flow" title="Flow" width="1050" height="591">
+			</div>
+			<div>
+				<img src="images/digital/caffeine-crime-scene.jpg" alt="Caffeine Crime Scene" title="Caffeine Crime Scene" width="750" height="900">
+			</div>
+			<div>
+				<img src="images/digital/wreath.jpg" alt="Mother Nature" title="Mother Nature" width="1050" height="825">
+			</div>
+			<div>
+				<img src="images/digital/chicken-and-pig.jpg" alt="Chicken &amp; Pig" title="Chicken &amp; Pig" width="1050" height="840">
+			</div>
+			<div>
+				<img src="images/digital/camp-and-a-cuppa.jpg" alt="Camp and a Cuppa" title="Camp and a Cuppa" width="1050" height="1260">
+			</div>
+			<div>
+				<img src="images/digital/illusions.jpg" alt="Illusions" title="Illusions" width="1050" height="1565">
+			</div>
+			<div>
+				<img src="images/digital/eggplant.jpg" alt="Eggplant" title="Eggplant" width="1050" height="1050">
+			</div>
+			<div>
+				<img src="images/digital/baker-park.jpg" alt="Baker Park" title="Baker Park" width="2100" height="1650">
+			</div>
+			<div>
+				<img src="images/digital/doll.jpg" alt="Doll" title="Doll" width="1050" height="1313">
+			</div>
+			<div>
+				<img src="images/digital/the-big-gin.jpg" alt="The Big &apos;Gin" title="The Big &apos;Gin" width="1050" height="1358">
+			</div>
+			<div>
+				<img src="images/digital/scotch.jpg" alt="Scotch" title="Scotch" width="1050" height="1050">
+			</div>
+			<div>
+				<img src="images/digital/natural-energy-law.jpg" alt="Natural Energy Law" title="Natural Energy Law" width="2100" height="2100">
+			</div>
+			<div>
+				<img src="images/digital/blond-sugar-skull.jpg" alt="Blond Sugar Skull" title="Blond Sugar Skull" width="1050" height="1200">
+			</div>
+			<div>
+				<img src="images/digital/orchid.jpg" alt="Orchid" title="Orchid" width="1050" height="1133">
+			</div>
+			<div>
+				<img src="images/digital/cloud-ship.jpg" alt="Cloud Ship" title="Cloud Ship" width="1050" height="917">
+			</div>
+
+			<div id="next-slide" onclick="nextSlide()">&gt;</div>
+			<div id="previous-slide" onclick="previousSlide()">&lt;</div>
+		</div>
+
+
+
+
+	</main>
+
+	<footer>
+		<div id="footer-grid">
+			<ul id="footer-portfolio">
+				<li id="footer-portfolio-name">Portfolio</li>
+				<li><a href="digital.html">Digital</a></li>
+				<li><a href="traditional.html">Traditional</a></li>
+				<li><a href="technical.html">Technical</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="web.html">Web</a></li>
+			</ul>
+
+			<img src="images/logo.png" width="619" height="336" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo">
+
+			<ul id="footer-links">
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="creative-brief.html">Creative Brief</a></li>
+				<li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+				<!-- <li><a href="references.html">References</a></li> -->
+			</ul>
+		</div>
+
+		<div id="validation">
+			<!-- <p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386d02%2Fwarren-final-project%2Fdigital.html&showsource=yes" target="_blank">HTML</a> |
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386d02%2Fwarren-final-project%2Fdigital.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a> |
+				<a href="sitemap.xml" target="_blank">XML</a>
+			</p> -->
+			<p>&copy; Kenneth Warren 2020</p>
+		</div>
+	</footer>
+
+	<script>
+		// For page search using mark.js
+		var markInstance = new Mark(document.getElementsByTagName("main")[0]);
+		var keywordInput = document.getElementById("page-search");
+		var clearInput = document.getElementById("clear");
+		var options = {
+			"separateWordSearch": false,
+		}
+
+		function search() {
+			var keyword = keywordInput.value;
+
+			markInstance.unmark({
+				done: function () {
+					markInstance.mark(keyword, options);
+				}
+			});
+		}
+
+		keywordInput.addEventListener("input", search);
+		keywordInput.addEventListener("keypress", function(e) {
+			if (e.keyCode === 13) {
+				e.preventDefault();
+			}
+		})
+		clearInput.addEventListener("click", search);
+	</script>
+
+</body>
+</html>

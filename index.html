@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="Multimedia Consulting Studio">
+  <meta property="og:description" content="Multimedia Consulting Studio is a design firm utilizing a collaborative effort leveraged by your vision.">
+	<meta property="og:image" content="//multimediaconsultingstudio.netlify.com/images/splash.png">
+	<meta property="og:image:url" content="//multimediaconsultingstudio.netlify.com/images/splash.png">
+	<meta property="og:image:type" content="image/png" />
+  <meta property="og:url" content="//multimediaconsultingstudio.netlify.com/">
+	<meta name="robots" content="index">
+	<meta name="author" content="Kenneth Warren">
+	<meta name="copyright" content="&copy; 2019 Kenneth Warren">
+	<meta name="description" content="Multimedia Consulting Studio is a design firm utilizing a collaborative effort leveraged by your vision.">
+	<meta name="keywords" content="digital, media, graphic, design, consulting, web, development, business">
+	<title>MCS&mdash;Home</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/mark.es6.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" onclick="menu()">&#9776;</div>
+
+		<nav>
+			<ul id="main-nav">
+				<li><a href="index.html" class="vw-anchor">HOME</a></li>
+				<li id="nav-portfolio" class="vw-anchor" onmouseover="showSubNav()" onmouseout="hideSubNav()">PORTFOLIO
+					<ul id="sub-nav">
+						<li><a href="digital.html">DIGITAL</a></li>
+						<li><a href="traditional.html">TRADITIONAL</a></li>
+						<li><a href="technical.html">TECHNICAL</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="video.html">VIDEO</a></li>
+						<li><a href="web.html">WEB</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="vw-anchor">SERVICES</a></li>
+				<li><a href="about.html" class="vw-anchor">ABOUT</a></li>
+				<li><a href="contact.html" class="vw-anchor">CONTACT</a></li>
+				<li><a href="blog.html" class="vw-anchor">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<div class="fas fa-search" onclick="showSearchBar()"></div>
+		<div id="search-section">
+			<form>
+				<input type="text" name="keyword" id="page-search" placeholder="Search this page..." title="Search this page..." autocomplete="off">
+				<input type="button" value="CLEAR" id="clear" onClick="this.form.reset()" />
+			</form>
+		</div>
+
+	</header>
+
+	<div id="hero" title="Social media icons">
+		<h1><span>Multimedia Consulting Studio</span></h1>
+	</div>
+
+	<main>
+
+
+		<!-- TAGLINE AND INTRO -->
+		<h2 id="tagline">Business Growth <br>Through <br>Digital Assets</h2>
+		<img src="images/logo.png" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo" width="619" height="336" id="logo-index">
+
+		<div id="intro">
+			<p>Multimedia Consulting Studio is a design firm specializing in graphic design, web design and development, publication design, social media marketing, printing management, and video production—approached from a business consultant’s point-of-view.</p>
+			<a href="about.html"><img src="images/man-standing.png" alt="Chief Executive Officer" title="Chief Executive Officer" width="624" height="624"></a>
+		</div>
+
+
+		<!-- SERVICES -->
+		<section id="consulting-bullets">
+			<h3>Consulting:</h3>
+			<ul>
+				<li>Small business development</li>
+				<li>Digital strategy</li>
+				<li>Capital budgeting</li>
+			</ul>
+			<a href="services.html#consulting"><img src="images/circles/consulting.jpg" alt="Consulting icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section class="bullets-dark-bg">
+			<h3>Digital:</h3>
+			<ul>
+				<li>Illustrations</li>
+				<li>Logos</li>
+				<li>Graphics</li>
+			</ul>
+			<a href="services.html#graphic-design"><img src="images/circles/digital.jpg" alt="Digital icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section class="bullets-light-bg">
+			<h3>Traditional:</h3>
+			<ul>
+				<li>Portraits</li>
+				<li>Wall art</li>
+				<li>Print management</li>
+			</ul>
+			<a href="traditional.html"><img src="images/circles/traditional.jpg" alt="Traditional icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section class="bullets-dark-bg">
+			<h3>Technical:</h3>
+			<ul>
+				<li>Diagrams</li>
+				<li>Maps</li>
+				<li>Infographics</li>
+			</ul>
+			<a href="technical.html"><img src="images/circles/technical.jpg" alt="Technical icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section class="bullets-light-bg">
+			<h3>Publication:</h3>
+			<ul>
+				<li>White papers</li>
+				<li>Annual reports</li>
+				<li>eBooks</li>
+			</ul>
+			<a href="services.html#publication-design"><img src="images/circles/publication.jpg" alt="Publication icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section id="video-production" class="bullets-dark-bg">
+			<h3>Video:</h3>
+			<ul>
+				<li>Storyboarding</li>
+				<li>Animations</li>
+				<li>Editing</li>
+			</ul>
+			<a href="services.html#video-production"><img src="images/circles/video.jpg" alt="Video icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+		<section class="bullets-light-bg">
+			<h3>Web:</h3>
+			<ul>
+				<li>Design</li>
+				<li>Development</li>
+				<li>Search engine optimization</li>
+			</ul>
+			<a href="services.html#web-design"><img src="images/circles/web.jpg" alt="Web icon" title="Click for detailed services" width="800" height="800"></a>
+		</section>
+
+
+		<!-- TARGET MARKET -->
+		<section id="target-market">
+			<h3>Target Market</h3>
+			<h4>Mid-Atlantic Region &amp; Remote</h4>
+			<p>Small businesses</p>
+			<p>Business incubators</p>
+			<p>Start-ups</p>
+			<p>Entrepreneurs</p>
+			<p>Business beginners</p>
+			<p>Sole proprietorships</p>
+		</section>
+
+
+		<!-- RESULTS -->
+		<section id="results">
+			<h3>Results</h3>
+			<div>
+				<h4>Attaboy Brewery</h4>
+				<p>Transitioned in-house kitchen to food truck to expand brewery into kitchen, resulting in 15% wider product mix, 12% increase in profits, and separate marketing platforms for brewery and food truck all within 3 months.</p>
+			</div>
+
+
+			<div>
+				<h4>Dublin Roasters Coffee, Inc.</h4>
+				<p>25% increase in revenue from lagging products, 10% overall increase in profit within 6 months, and continued digital marketing support.</p>
+			</div>
+
+			<div>
+				<h4>Computer Enhancement Systems, Inc.</h4>
+				<p>25% decrease in expenses, increased productivity and morale, and secured capital for overseas market-entry business plan.</p>
+			</div>
+
+			<div>
+				<h4>Lebherz Oil &amp; Vinegar Emporium</h4>
+				<p>Opened second location and increased print and digital media output to achieve KPIs 3 months early resulting in loan payoff 5 years early.</p>
+			</div>
+		</section>
+
+
+		<!-- TESTIMONIALS -->
+		<section id="testimonials">
+			<h3>Testimonials</h3>
+			<div id="slideshow-grid" class="slideshow">
+				<img src="images/karen.jpg" alt="Industrial Furniture Co." title="Industrial Furniture Co." width="800" height="800">
+				<p>We didn’t have a digital media strategy but after we consulted with MCS we had a long-term direction and short-term goals. Brendan even checked in on us and helped out after our consulting deal had ended. He really wants to see others succeed.
+					<br><br>
+					Karen&mdash;Industrial Furniture Co.</p>
+			</div>
+
+			<div class="slideshow">
+				<img src="images/jerome.jpg" alt="Custom Auto Audio" title="Custom Auto Audio" width="800" height="800">
+				<p>Brendan’s tactics are supported by industry research. That’s why we trusted him. Glad we did because our business growth is in direct proportion to his efforts. Plus, he gave us a path forward for implementing a digital strategy on our own.
+					<br><br>
+					Jerome&mdash;Custom Auto Audio</p>
+			</div>
+
+			<div class="slideshow">
+				<img src="images/anne.jpg" alt="Spire City Movers" title="Spire City Movers" width="800" height="800">
+				<p>Taking advantage of MCS’s “no upfront costs deal” was a game-changer. We had nothing to lose but we gained a whole lot! We are leaner, more productive, and more effective than ever. Definitely recommend!
+					<br><br>
+					Anne&mdash;Spire City Movers</p>
+			</div>
+
+			<div class="slideshow">
+				<img src="images/brad-and-monica.jpg" alt="Primetime Catering" title="Primetime Catering" width="800" height="800">
+				<p>We had no logo, no brand, no strategy. But MCS changed it all. Now we have a business! My wife and I were able to quit our jobs and work for ourselves fulltime. Brendan has the know-how, the dedication, and the flexibility to work with any type of business.
+					<br><br>
+					Brad and Monica&mdash;Primetime Catering</p>
+			</div>
+
+			<div id="slide-buttons">
+				<span class="slide-buttons" onclick="currentSlide(0)"></span>
+				<span class="slide-buttons" onclick="currentSlide(1)"></span>
+				<span class="slide-buttons" onclick="currentSlide(2)"></span>
+				<span class="slide-buttons" onclick="currentSlide(3)"></span>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<div id="footer-grid">
+			<ul id="footer-portfolio">
+				<li id="footer-portfolio-name">Portfolio</li>
+				<li><a href="digital.html">Digital</a></li>
+				<li><a href="traditional.html">Traditional</a></li>
+				<li><a href="technical.html">Technical</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="web.html">Web</a></li>
+			</ul>
+
+			<img src="images/logo.png" width="619" height="336" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo">
+
+			<ul id="footer-links">
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="creative-brief.html">Creative Brief</a></li>
+				<li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+				<!-- <li><a href="references.html">References</a></li> -->
+			</ul>
+		</div>
+
+		<div id="validation">
+			<!-- <p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386d02%2Fwarren-final-project%2Findex.html&showsource=yes" target="_blank">HTML</a> |
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386d02%2Fwarren-final-project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a> |
+				<a href="sitemap.xml" target="_blank">XML</a>
+			</p> -->
+			<p>&copy; Kenneth Warren 2020</p>
+		</div>
+	</footer>
+
+	<script>
+		// For page search using mark.js
+		var markInstance = new Mark(document.getElementsByTagName("main")[0]);
+		var keywordInput = document.getElementById("page-search");
+		var clearInput = document.getElementById("clear");
+		var options = {
+			"separateWordSearch": false,
+		}
+
+		function search() {
+			var keyword = keywordInput.value;
+
+			markInstance.unmark({
+				done: function () {
+					markInstance.mark(keyword, options);
+				}
+			});
+		}
+
+		keywordInput.addEventListener("input", search);
+		keywordInput.addEventListener("keypress", function(e) {
+			if (e.keyCode === 13) {
+				e.preventDefault();
+			}
+		})
+		clearInput.addEventListener("click", search);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index">
+	<meta name="author" content="Kenneth Warren">
+	<meta name="copyright" content="&copy; 2019 Kenneth Warren">
+	<meta name="description" content="Multimedia Consulting Studio is a design firm utilizing a collaborative effort leveraged by your vision, all from a business consultant's point-of-view.">
+	<meta name="keywords" content="digital, media, graphic, design, consulting, web, development, publication, social, marketing, print, management, video, production, business">
+	<title>MCS&mdash;Services</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/mark.es6.min.js"></script>
+	<script src="js/services.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" onclick="menu()">&#9776;</div>
+
+		<nav>
+			<ul id="main-nav">
+				<li><a href="index.html" class="vw-anchor">HOME</a></li>
+				<li id="nav-portfolio" class="vw-anchor" onmouseover="showSubNav()" onmouseout="hideSubNav()">PORTFOLIO
+					<ul id="sub-nav">
+						<li><a href="digital.html">DIGITAL</a></li>
+						<li><a href="traditional.html">TRADITIONAL</a></li>
+						<li><a href="technical.html">TECHNICAL</a></li>
+						<li><a href="publication.html">PUBLICATION</a></li>
+						<li><a href="video.html">VIDEO</a></li>
+						<li><a href="web.html">WEB</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="vw-anchor">SERVICES</a></li>
+				<li><a href="about.html" class="vw-anchor">ABOUT</a></li>
+				<li><a href="contact.html" class="vw-anchor">CONTACT</a></li>
+				<li><a href="blog.html" class="vw-anchor">BLOG</a></li>
+			</ul>
+		</nav>
+
+		<div class="fas fa-search" onclick="showSearchBar()"></div>
+		<div id="search-section">
+			<form>
+				<input type="text" name="keyword" id="page-search" placeholder="Search this page..." title="Search this page..." autocomplete="off">
+				<input type="button" value="CLEAR" id="clear" onClick="this.form.reset()" />
+			</form>
+		</div>
+
+	</header>
+
+	<main>
+
+		<h2 id="tagline">Services</h2>
+		<!-- <h3 id="tagline-h3">Digital</h3> -->
+		<p id="skills">Multimedia Consulting Studio is a design firm specializing in graphic design, web design and development, publication design, social media marketing, printing management, and video production—approached from a business consultant’s point-of-view.<br><br>
+		MCS utilizes a collaborative effort to maximize creativity, leveraged by your vision. The process begins with a creative brief, then progresses toward preliminary deliverables such as thumbnail sketches, mockups, and animations. Once a direction is agreed upon, refined deliverables are produced and feedback is implemented. Lastly, final execution ensues and as milestones are met, further refinement and feedback are exchanged.</p>
+
+		<section id="consulting">
+			<h3>Business Consulting</h3>
+			<img src="images/circles/consultant.jpg" alt="Consultant icon" title="Consultant icon" width="800" height="800">
+			<p>As a former small business co-owner with a master’s degree in business administration, business consulting comes naturally. Small business development entails evaluations on organizational culture; leadership, management, and team effectiveness; audits on organizational and departmental visions, missions, values, and goals; financial analysis and statement reconciliation; assessments on risk and product pricing, product mix, and distribution channels; short-term and long-term capital budgeting needs assessments; alignment with managerial accounting standards and ethical decision-making; employee and contractor hiring strategies; business entity restructuring; global business opportunity evaluations; geographical expansions and relocations; information technology and business process audits; market assessments; marketing plans and tracking; and market entry planning, operational plans, and competitive strategies.</p>
+		</section>
+
+		<section id="graphic-design" class="service-dark-bg">
+			<h3>Graphic Design</h3>
+			<img src="images/circles/graphic-design.jpg" alt="Graphic Design icon" title="Graphic Design icon" width="800" height="800">
+			<p>“Art is a question to a problem. Design is a solution to a problem.” John Maeda, former president of the Rhode Island School of Design.</p><br>
+			<p>The message and the audience are always the foundation of decision-making when it comes to graphic communication. A creative brief helps create a mutual understanding of the message and audience, in addition to the stakeholders and business landscape. Visual hierarchy and typography are utilized to logically—and creatively—display messages with intention, purpose, and function so as to embrace organizational identity and facilitate audience action and reaction. Yet, at the core of action and reaction are the emotions that are desired to be elicited from the audience to create a connection between the business and consumer. A glance is typically all the time available to grab a person’s attention; therefore, simplicity is key. Aiding in communication is a grasp on the organization’s history, product placement, and the surrounding culture, as well as color theory and design fundamentals such as Gestalt principles.</p>
+		</section>
+
+		<section id="web-design" class="service-light-bg">
+			<h3>Web Design</h3>
+			<img src="images/circles/web-design.jpg" alt="Web Design icon" title="Web Design icon" width="800" height="800">
+			<p>User experience is now at the forefront of web designs. Designing for user experience—in addition to user interaction and mobile platforms—is a trending movement propelling change across entire websites. However, at the core of these buzz words is content—your message is the top priority, and communicating it is the focus of the web design.</p><br>
+			<p>With well-crafted messages, mobile-first designs that are responsive to larger screens are the initial strategy. Removing barriers of frustration are also essential in building trust with users. As such, an A/B testing strategy for different demographics is always recommended. Inevitably, the result is a dynamic and reliable website that facilitates user engagement through an aesthetically pleasing experience. Add in continuing Search Engine Optimization and you’ll have high-ranking web pages.</p>
+		</section>
+
+		<section id="publication-design" class="service-dark-bg">
+			<h3>Publication Design</h3>
+			<img src="images/circles/publication-design.jpg" alt="Publication Design icon" title="Publication Design icon" width="800" height="800">
+			<p>The content and the data are of primary importance, but how they’re delivered are also important. From annual reports to monthly magazines, research papers to fact sheets, and direct mailers to onsite posters—if you have content that needs to be disseminated in digital or print form, then you should know that design is in the details.</p><br>
+			<p>Options to consider include the paper quality, UV coating, embossing and scoring, cover material and size, binding type, cost of inks, and so much more. On top of these eye-catching options, a grasp of illustrations and data visualizations help communicate your messages into action. But there is more than just aesthetics. Just like web designs, it’s difficult to tell on which device your publication is being viewed. That’s why content reflow is important to also consider. Static PDF documents do still serve a purpose, but those on the go, continuously pinching to zoom and pan is not effective design.</p>
+		</section>
+
+		<section class="service-light-bg">
+			<h3>Social Media Marketing</h3>
+			<img src="images/circles/social-media-marketing.jpg" alt="Social Media Marketing icon" title="Social Media Marketing icon" width="800" height="800">
+			<p>Engagement. Are you using social channels to engage with your audience, spark conversations, and respond to their needs? During an audience’s endeavor to discover new media, marketing with genuine and relevant content helps catapult your website traffic. Still, as the saying goes: content may be king, but context is god. Essentially, this content needs to be tailored not only to your audience, but also tailored to current trends and tailored to each individual social media channel to drive interaction and sharing. How ever daunting this may seem, don’t fret. It’s not all bad because the riches are in the niches. Engage with an audience very well through a few channels, as opposed to moderately well to all of them, and your audience will see that your content and efforts aren’t devalued by being stretched too thin. As a result, you’ll build trust and loyalty.</p>
+		</section>
+
+		<section class="service-dark-bg">
+			<h3>Print Management</h3>
+			<img src="images/circles/print-management.jpg" alt="Print Management icon" title="Print Management icon" width="800" height="800">
+			<p>Commercial printing can be confusing, and that confusion can cost a lot of time, money, and missed deadlines. Seeking someone who has the know-how and experience communicating (translating) these terms is a small price worth paying to make the boss happy. Furthermore, consulting with someone who has the knowledge of the printing options that are available to assist in catching the eye of the audience—thus, helping your message stick—is also worth considering when deciding on a print product. Branding, fact checking, copyrighting, editing for audience suitability, designing visuals, printing to spec, and delivering on time are all services worthy of consideration.</p>
+		</section>
+
+		<section id="video-production" class="service-light-bg">
+			<h3>Video Production</h3>
+			<img src="images/circles/video-production.jpg" alt="Video Production icon" title="Video Production icon" width="800" height="800">
+			<p>Video viewership has increased significantly over the last few years, which has been facilitated by mobile devices. Explainer videos and how-to videos are trending among small businesses, further assisting in social media marketing. Event broadcasts such as webinars and corporate conventions, as well as distance education videos all serve as content capital that can be repackaged as marketing tools, augmenting your competitive advantage. Furthermore, pre-production, production, and post-production can all be documented as an additional tool to engage your audience.</p>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<div id="footer-grid">
+			<ul id="footer-portfolio">
+				<li id="footer-portfolio-name">Portfolio</li>
+				<li><a href="digital.html">Digital</a></li>
+				<li><a href="traditional.html">Traditional</a></li>
+				<li><a href="technical.html">Technical</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="web.html">Web</a></li>
+			</ul>
+
+			<img src="images/logo.png" width="619" height="336" alt="Multimedia Consulting Studio logo" title="Multimedia Consulting Studio logo">
+
+			<ul id="footer-links">
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="creative-brief.html">Creative Brief</a></li>
+				<li><a href="privacy-policy.html">Privacy&nbsp;Policy</a></li>
+				<!-- <li><a href="references.html">References</a></li> -->
+			</ul>
+		</div>
+
+		<div id="validation">
+			<!-- <p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386d02%2Fwarren-final-project%2Fservices.html&showsource=yes" target="_blank">HTML</a> |
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386d02%2Fwarren-final-project%2Fservices.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a> |
+				<a href="sitemap.xml" target="_blank">XML</a>
+			</p> -->
+			<p>&copy; Kenneth Warren 2020</p>
+		</div>
+	</footer>
+
+	<script>
+		// For page search using mark.js
+		var markInstance = new Mark(document.getElementsByTagName("main")[0]);
+		var keywordInput = document.getElementById("page-search");
+		var clearInput = document.getElementById("clear");
+		var options = {
+			"separateWordSearch": false,
+		}
+
+		function search() {
+			var keyword = keywordInput.value;
+
+			markInstance.unmark({
+				done: function () {
+					markInstance.mark(keyword, options);
+				}
+			});
+		}
+
+		keywordInput.addEventListener("input", search);
+		keywordInput.addEventListener("keypress", function(e) {
+			if (e.keyCode === 13) {
+				e.preventDefault();
+			}
+		})
+		clearInput.addEventListener("click", search);
+	</script>
+
+</body>
+</html>
